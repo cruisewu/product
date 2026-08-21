@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="全民易讀、專業深入的運動數據日誌靜態樣板">
-  <title>我的運動日誌｜臺灣運動數據平台</title>
+  <meta name="description" content="整合全民運動、競技訓練與場館預約的臺灣運動數據平台">
+  <title>臺灣運動數據平台</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -16,21 +16,22 @@
       <nav><a href="#features">功能介紹</a><button class="ghost">登入</button></nav>
     </header>
     <main class="hero">
-      <div class="hero-title"><p>MY SPORTS JOURNAL</p><h1>我的運動日誌</h1><span>每一次移動，都累積成更好的自己。選擇適合你的數據視角。</span></div>
+      <div class="hero-title"><p>TAIWAN SPORTS DATA PLATFORM</p><h1>臺灣運動數據平台</h1><span>從全民健康、競技訓練到場館服務，讓運動數據成為每個人的助力。</span></div>
       <div class="role-cards">
         <button class="role-card" data-go="citizen"><span class="role-icon">全民</span><i>一般使用者</i><h2>全民運動日誌</h2><p>用白話、直覺的方式掌握活動、健康與各項運動成果。</p><ul><li>今日活動與健康摘要</li><li>路跑、體適能、自行車、羽球</li><li>賽事紀錄與個人里程碑</li></ul><b>進入全民版 →</b></button>
         <button class="role-card pro" data-go="athlete"><span class="role-icon">專業</span><i>教練・選手</i><h2>教練選手運動日誌</h2><p>整合訓練負荷、恢復、風險及 LLM AI 教練分析建議。</p><ul><li>進階表現與負荷指標</li><li>指標、影響與行動建議</li><li>LLM AI 教練決策支援</li></ul><b>進入專業版 →</b></button>
+        <button class="role-card venue-role" data-go="venues"><span class="role-icon">場館</span><i>民眾・業者</i><h2>運動場館預約</h2><p>像訂房一樣搜尋場館，也讓營運商快速上架、定價與管理訂單。</p><ul><li>依地點、項目與時間搜尋</li><li>場地詳情與時段預約</li><li>業者營運與收益後台</li></ul><b>搜尋運動場館 →</b></button>
       </div>
     </main>
-    <section class="landing-features" id="features"><article><b>01</b><span>跨裝置整合<small>穿戴裝置與運動紀錄</small></span></article><article><b>02</b><span>多運動日誌<small>從日常活動到正式賽事</small></span></article><article><b>03</b><span>分級數據視角<small>全民易讀、專業深入</small></span></article></section>
+    <section class="landing-features" id="features"><article><b>01</b><span>跨裝置整合<small>穿戴裝置與運動紀錄</small></span></article><article><b>02</b><span>多運動日誌<small>從日常活動到正式賽事</small></span></article><article><b>03</b><span>場館服務生態<small>預約、上架與營運分析</small></span></article></section>
   </section>
 
   <section class="view app-view" id="citizen" data-view="citizen">
-    <aside class="side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>我的運動日誌</b><small>全民版</small></span></button><nav><a class="on" href="#c-overview">今日總覽</a><a href="#c-sports">運動版圖</a><a href="#c-events">賽事紀錄</a><a href="#c-health">健康趨勢</a></nav><button class="switch" data-go="athlete">切換專業版</button></aside>
+    <aside class="side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>運動數據平台</b><small>全民版</small></span></button><nav><a class="on" data-go="citizen">今日總覽</a><a data-go="citizen-running">路跑</a><a data-go="citizen-fitness">體適能</a><a data-go="citizen-cycling">自行車</a><a data-go="citizen-badminton">羽球</a><a data-go="citizen-events">賽事中心</a></nav><button class="switch" data-go="athlete">切換專業版</button></aside>
     <main class="app-main">
       <header class="app-top"><div><h1>全民運動日誌</h1><p>2026 年 8 月 21 日・星期五</p></div><button class="profile">吳</button></header>
       <div class="content" id="c-overview">
-        <section class="welcome"><div><small>今日狀態</small><h2>早安，家霖！今天也一起動起來。</h2><p>昨晚睡眠充足，建議安排 30 分鐘中等強度活動。</p></div><div class="score"><b>82</b><span>活力指數</span></div></section>
+        <section class="welcome"><div><small>今日狀態</small><h2>早安，旭緯！今天也一起動起來。</h2><p>昨晚睡眠充足，建議安排 30 分鐘中等強度活動。</p></div><div class="score"><b>82</b><span>活力指數</span></div></section>
         <section class="kpis"><article><small>今日步數</small><b>8,642 <i>步</i></b><span>目標完成 86%</span></article><article class="orange"><small>活動時間</small><b>48 <i>分鐘</i></b><span>比昨日多 12 分鐘</span></article><article class="green"><small>活動熱量</small><b>386 <i>kcal</i></b><span>本週平均 342 kcal</span></article><article class="sky"><small>靜止心率</small><b>62 <i>bpm</i></b><span>近七日維持穩定</span></article></section>
         <section class="grid two-one" id="c-health"><article class="panel"><header><div><small>WEEKLY ACTIVITY</small><h2>本週活動趨勢</h2></div><button>查看月報</button></header><div class="bars"><i style="height:34%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:45%"></i><i style="height:92%"></i><i style="height:62%"></i><i class="today" style="height:70%"></i></div><div class="day-labels"><span>六</span><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><p class="summary"><b>312 分鐘</b> 本週累積・較上週增加 14%</p></article><article class="panel goal-panel"><header><div><small>MY GOAL</small><h2>每週目標</h2></div></header><div class="ring"><span><b>78%</b><small>已完成</small></span></div><p><b>4</b> 運動天數　／　目標 5 天</p></article></section>
 
@@ -43,7 +44,7 @@
   </section>
 
   <section class="view app-view" id="athlete" data-view="athlete">
-    <aside class="side pro-side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>我的運動日誌</b><small>教練選手版</small></span></button><nav><a class="on" href="#a-overview">選手總覽</a><a href="#a-load">訓練負荷</a><a href="#a-advice">決策建議</a><a href="#a-ai">AI 教練</a></nav><button class="switch" data-go="citizen">切換全民版</button></aside>
+    <aside class="side pro-side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>運動數據平台</b><small>教練選手版</small></span></button><nav><a class="on" data-go="athlete">選手總覽</a><a data-go="athlete-performance">競技表現</a><a data-go="athlete-recovery">恢復風險</a><a data-go="athlete-ai">AI 教練</a></nav><button class="switch" data-go="citizen">切換全民版</button></aside>
     <main class="app-main">
       <header class="app-top"><div><h1>教練選手運動日誌</h1><p>國家培訓隊・羽球專項</p></div><button class="profile pro-profile">林</button></header>
       <div class="content" id="a-overview">
