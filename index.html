@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="全民易讀、專業深入的運動數據日誌靜態樣板">
+  <title>我的運動日誌｜臺灣運動數據平台</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <noscript><p class="noscript">請開啟 JavaScript 以切換全民版與教練選手版。</p></noscript>
+
+  <section class="view active" id="landing" data-view="landing">
+    <header class="main-header">
+      <button class="brand" data-go="landing" aria-label="回到入口首頁"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>臺灣運動數據平台</b><small>TAIWAN SPORTS DATA PLATFORM</small></span></button>
+      <nav><a href="#features">功能介紹</a><button class="ghost">登入</button></nav>
+    </header>
+    <main class="hero">
+      <div class="hero-title"><p>MY SPORTS JOURNAL</p><h1>我的運動日誌</h1><span>每一次移動，都累積成更好的自己。選擇適合你的數據視角。</span></div>
+      <div class="role-cards">
+        <button class="role-card" data-go="citizen"><span class="role-icon">全民</span><i>一般使用者</i><h2>全民運動日誌</h2><p>用白話、直覺的方式掌握活動、健康與各項運動成果。</p><ul><li>今日活動與健康摘要</li><li>路跑、體適能、自行車、羽球</li><li>賽事紀錄與個人里程碑</li></ul><b>進入全民版 →</b></button>
+        <button class="role-card pro" data-go="athlete"><span class="role-icon">專業</span><i>教練・選手</i><h2>教練選手運動日誌</h2><p>整合訓練負荷、恢復、風險及 LLM AI 教練分析建議。</p><ul><li>進階表現與負荷指標</li><li>指標、影響與行動建議</li><li>LLM AI 教練決策支援</li></ul><b>進入專業版 →</b></button>
+      </div>
+    </main>
+    <section class="landing-features" id="features"><article><b>01</b><span>跨裝置整合<small>穿戴裝置與運動紀錄</small></span></article><article><b>02</b><span>多運動日誌<small>從日常活動到正式賽事</small></span></article><article><b>03</b><span>分級數據視角<small>全民易讀、專業深入</small></span></article></section>
+  </section>
+
+  <section class="view app-view" id="citizen" data-view="citizen">
+    <aside class="side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>我的運動日誌</b><small>全民版</small></span></button><nav><a class="on" href="#c-overview">今日總覽</a><a href="#c-sports">運動版圖</a><a href="#c-events">賽事紀錄</a><a href="#c-health">健康趨勢</a></nav><button class="switch" data-go="athlete">切換專業版</button></aside>
+    <main class="app-main">
+      <header class="app-top"><div><h1>全民運動日誌</h1><p>2026 年 8 月 21 日・星期五</p></div><button class="profile">吳</button></header>
+      <div class="content" id="c-overview">
+        <section class="welcome"><div><small>今日狀態</small><h2>早安，旭緯！今天也一起動起來。</h2><p>昨晚睡眠充足，建議安排 30 分鐘中等強度活動。</p></div><div class="score"><b>82</b><span>活力指數</span></div></section>
+        <section class="kpis"><article><small>今日步數</small><b>8,642 <i>步</i></b><span>目標完成 86%</span></article><article class="orange"><small>活動時間</small><b>48 <i>分鐘</i></b><span>比昨日多 12 分鐘</span></article><article class="green"><small>活動熱量</small><b>386 <i>kcal</i></b><span>本週平均 342 kcal</span></article><article class="sky"><small>靜止心率</small><b>62 <i>bpm</i></b><span>近七日維持穩定</span></article></section>
+        <section class="grid two-one" id="c-health"><article class="panel"><header><div><small>WEEKLY ACTIVITY</small><h2>本週活動趨勢</h2></div><button>查看月報</button></header><div class="bars"><i style="height:34%"></i><i style="height:55%"></i><i style="height:78%"></i><i style="height:45%"></i><i style="height:92%"></i><i style="height:62%"></i><i class="today" style="height:70%"></i></div><div class="day-labels"><span>六</span><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span></div><p class="summary"><b>312 分鐘</b> 本週累積・較上週增加 14%</p></article><article class="panel goal-panel"><header><div><small>MY GOAL</small><h2>每週目標</h2></div></header><div class="ring"><span><b>78%</b><small>已完成</small></span></div><p><b>4</b> 運動天數　／　目標 5 天</p></article></section>
+
+        <section id="c-sports"><div class="section-head"><div><small>MY SPORTS</small><h2>我的運動版圖</h2><p>把不同運動放在一起看，了解今年動了多少。</p></div><button>新增運動紀錄</button></div><div class="sport-grid"><article><header><b>跑</b><span>路跑<small>今年累積</small></span></header><h3>186.4 <i>km</i></h3><p>完成 12 場 <b>最長 21.1 km</b></p></article><article class="fitness"><header><b>體</b><span>體適能<small>最近檢測</small></span></header><h3>良好</h3><p>完成 6 次 <b>心肺進步 8%</b></p></article><article class="bike"><header><b>騎</b><span>自行車<small>今年累積</small></span></header><h3>326 <i>km</i></h3><p>完成 9 趟 <b>爬升 3,820 m</b></p></article><article class="badminton"><header><b>羽</b><span>羽球<small>今年累積</small></span></header><h3>18 <i>次</i></h3><p>共 22.5 小時 <b>平均 74 分鐘</b></p></article></div></section>
+
+        <section class="grid event-layout" id="c-events"><article class="panel"><header><div><small>EVENT HISTORY</small><h2>年度賽事與挑戰紀錄</h2></div></header><div class="event-list"><div class="event head"><span>項目／賽事</span><span>日期</span><span>成績</span><span>結果</span></div><div class="event"><span><b>跑</b><i>臺北城市路跑 10K<small>路跑・10 公里</small></i></span><span>2026/07/12</span><span><strong>56:18</strong><small>配速 5&apos;38&quot;</small></span><span><em>個人最佳</em></span></div><div class="event"><span><b>騎</b><i>北海岸自行車挑戰<small>自行車・68 公里</small></i></span><span>2026/05/24</span><span><strong>3:12:40</strong><small>爬升 820 m</small></span><span><em>順利完賽</em></span></div><div class="event"><span><b>體</b><i>國民體適能檢測<small>心肺・肌力・柔軟度</small></i></span><span>2026/04/18</span><span><strong>銀質</strong><small>心肺良好</small></span><span><em>進步 1 級</em></span></div><div class="event"><span><b>羽</b><i>社區羽球交流賽<small>男子雙打</small></i></span><span>2026/03/08</span><span><strong>8 強</strong><small>3 勝 1 負</small></span><span><em>完成挑戰</em></span></div></div></article><article class="panel fitness-simple"><header><div><small>FITNESS SNAPSHOT</small><h2>體能變化・白話版</h2></div></header><div class="age"><b>39<small>體能年齡</small></b><p>比實際年齡年輕 <strong>4 歲</strong><small>代表心肺與活動習慣優於同齡平均。</small></p></div><div class="plain"><p><span>心肺耐力</span><b>很好</b><i><em style="width:84%"></em></i><small>長時間運動比較不容易喘</small></p><p><span>肌力狀態</span><b>普通</b><i><em class="orange-bar" style="width:62%"></em></i><small>建議每週增加 2 次簡單肌力</small></p><p><span>柔軟度</span><b>良好</b><i><em style="width:74%"></em></i><small>運動後持續伸展即可</small></p></div></article></section>
+        <section class="milestones"><article><small>完成</small><b>第一場半馬</b><span>2026 年 2 月</span></article><article><small>累積</small><b>100 小時運動</b><span>2026 年 6 月</span></article><article><small>連續</small><b>12 週達成目標</b><span>本週持續中</span></article><p><b>今年已解鎖 8 個里程碑</b><span>每一次完成，都值得被記住。</span></p></section>
+      </div>
+    </main>
+  </section>
+
+  <section class="view app-view" id="athlete" data-view="athlete">
+    <aside class="side pro-side"><button class="brand" data-go="landing"><span class="brand-bars"><i></i><i></i><i></i></span><span><b>我的運動日誌</b><small>教練選手版</small></span></button><nav><a class="on" href="#a-overview">選手總覽</a><a href="#a-load">訓練負荷</a><a href="#a-advice">決策建議</a><a href="#a-ai">AI 教練</a></nav><button class="switch" data-go="citizen">切換全民版</button></aside>
+    <main class="app-main">
+      <header class="app-top"><div><h1>教練選手運動日誌</h1><p>國家培訓隊・羽球專項</p></div><button class="profile pro-profile">林</button></header>
+      <div class="content" id="a-overview">
+        <section class="athlete-strip"><div class="athlete-avatar">陳</div><div><small>目前檢視選手</small><h2>陳柏宇 <i>男子單打・23 歲</i></h2></div><p><span>訓練階段<b>專項強化期</b></span><span>下場賽事<b>亞洲公開賽・12 天</b></span></p><button>切換選手⌄</button></section>
+        <section class="pro-alert"><b>●　可正常訓練</b><p>恢復狀態良好，但下肢神經肌肉指標略低於個人基準，爆發訓練建議減少一組。</p><span>示意數據</span></section>
+        <section class="kpis"><article class="green"><small>訓練準備度</small><b>84 <i>/ 100</i></b><span>高於 28 日平均</span></article><article><small>急慢性負荷比</small><b>1.18</b><span>安全區間 0.8–1.3</span></article><article class="sky"><small>HRV 趨勢</small><b>68 <i>ms</i></b><span>較基準上升 4.6%</span></article><article class="orange"><small>主觀疲勞</small><b>3.2 <i>/ 10</i></b><span>低度疲勞・持續追蹤</span></article></section>
+        <section class="grid two-one" id="a-load"><article class="panel"><header><div><small>TRAINING LOAD</small><h2>訓練負荷與適應趨勢</h2></div><button>近 28 天⌄</button></header><div class="line-chart"><svg viewBox="0 0 700 220" preserveAspectRatio="none"><path class="area" d="M0,178 C80,155 105,142 155,148 S245,95 300,112 S395,142 452,93 S550,54 610,76 S660,88 700,56 L700,220 L0,220 Z"></path><path class="acute" d="M0,178 C80,155 105,142 155,148 S245,95 300,112 S395,142 452,93 S550,54 610,76 S660,88 700,56"></path><path class="chronic" d="M0,164 C95,162 140,150 205,146 S320,140 380,127 S495,112 565,104 S640,92 700,90"></path></svg></div><div class="load-numbers"><span><small>7 日急性負荷</small><b>3,420 AU</b></span><span><small>28 日慢性負荷</small><b>2,904 AU</b></span><span><small>負荷變化率</small><b>+8.2%</b></span></div></article><article class="panel risk"><header><div><small>RECOVERY & RISK</small><h2>風險與恢復監測</h2></div></header><div class="risk-score"><b>低<small>綜合風險</small></b><p>目前各項指標位於可接受範圍</p></div><label>訓練負荷風險 <b>正常</b><i><em style="width:42%"></em></i></label><label>恢復不足風險 <b>偏低</b><i><em style="width:28%"></em></i></label><label>傷害風險訊號 <b>留意</b><i><em class="orange-bar" style="width:56%"></em></i></label></article></section>
+
+        <section id="a-advice"><div class="section-head pro-head"><div><small>DECISION SUPPORT</small><h2>今日訓練決策建議</h2><p>每一項建議都標示依據、可能影響與可採取的動作。</p></div><span>已整合 18 項指標</span></div><div class="decision-grid"><article class="warn"><small>優先 1</small><h3>下肢爆發訓練減量</h3><p>CMJ 低於基準 5.8%，較可能是局部神經肌肉疲勞。</p><b>影響：啟動速度、連續起跳</b><strong>動作：多球訓練減少 1 組</strong></article><article><small>優先 2</small><h3>維持有氧與技術量</h3><p>HRV 上升 4.6%、靜止心率穩定，整體恢復良好。</p><b>影響：耐力與技術品質穩定</b><strong>動作：主課表照常執行</strong></article><article class="blue"><small>優先 3</small><h3>監測右膝落地負荷</h3><p>右側著地衝擊比左側高 11%，連續三次超出個人範圍。</p><b>影響：變向穩定、膝部壓力</b><strong>動作：加入單腳落地檢查</strong></article><article class="good"><small>維持</small><h3>睡眠與補水策略有效</h3><p>睡眠效率 91%，晨間體重與尿液比重皆在目標區間。</p><b>影響：反應與專注維持良好</b><strong>動作：延續現行恢復流程</strong></article></div></section>
+
+        <section class="panel impact"><header><div><small>INDICATOR → IMPACT → ACTION</small><h2>進階指標影響矩陣</h2></div></header><div class="impact-table"><div class="impact-row head"><span>進階指標</span><span>變化</span><span>數據判讀</span><span>影響表現</span><span>建議處置</span></div><div class="impact-row"><span><b>CMJ 跳躍高度</b><small>神經肌肉狀態</small></span><span class="bad">−5.8%</span><span>局部爆發疲勞</span><span>第一步啟動、連續起跳</span><span><em>高強度量 −20%</em></span></div><div class="impact-row"><span><b>HRV・RMSSD</b><small>自律神經恢復</small></span><span class="good-text">+4.6%</span><span>全身性恢復良好</span><span>耐力、專注、訓練耐受</span><span><em>主課表維持</em></span></div><div class="impact-row"><span><b>ACWR</b><small>急慢性負荷比</small></span><span>1.18</span><span>負荷提升合理</span><span>適應效果與傷害風險</span><span><em>持續每日追蹤</em></span></div><div class="impact-row"><span><b>落地衝擊不對稱</b><small>左右側差異</small></span><span class="bad">11%</span><span>右側代償訊號</span><span>變向穩定、膝踝負荷</span><span><em>增加動作篩檢</em></span></div></div></section>
+
+        <section class="ai-panel" id="a-ai"><header><div class="ai-logo">AI</div><div><small>LLM PERFORMANCE COACH</small><h2>運動數據 AI 教練</h2><p>● 已完成今日資料分析・最後更新 08:20</p></div><button>重新分析</button></header><div class="ai-body"><aside><h3>本次分析資料</h3><p>穿戴生理數據 <b>6 項</b></p><p>訓練負荷數據 <b>4 項</b></p><p>跳躍與動作測試 <b>5 項</b></p><p>主觀量表與備註 <b>3 項</b></p><h3>關鍵變化</h3><em>CMJ −5.8%</em><em>右側衝擊 +11%</em><em>HRV +4.6%</em></aside><main><div class="ai-message"><b>AI</b><p><strong>教練早安，以下是陳柏宇今日的訓練判讀：</strong><span>整體恢復良好，可以正常進行技術與有氧課表；但下肢爆發與右側落地出現局部疲勞訊號。這不是全面性疲勞，因此建議精準調整高衝擊內容。</span></p></div><div class="reasoning"><article><small>01・數據證據</small><h3>哪些數據改變？</h3><p>CMJ −5.8%、右側衝擊 +11%；HRV +4.6%、睡眠效率 91%。</p></article><article><small>02・綜合判讀</small><h3>代表什麼？</h3><p>整體恢復良好，但下肢神經肌肉與右側控制尚未完全恢復。</p></article><article><small>03・表現影響</small><h3>可能影響什麼？</h3><p>第一步啟動、連續起跳與右側變向；耐力與專注不受影響。</p></article><article><small>04・教練行動</small><h3>今天怎麼調整？</h3><p>有氧照常；高強度多球減一組，加入單腳落地檢查。</p></article></div><div class="ai-conclusion"><small>AI 教練結論</small><b>「維持整體課量，局部降低爆發與落地衝擊」</b><span>可保留訓練刺激，同時避免下肢局部疲勞累積。</span></div><div class="prompts"><button>為什麼不是整堂降量？</button><button>比較過去 28 天</button><button>產生下午課表</button><button>輸出選手白話版</button></div><small class="disclaimer">AI 建議用於教練決策支援，不取代教練專業判斷、醫療診斷或傷害處置。</small></main></div></section>
+      </div>
+    </main>
+  </section>
+  <script src="./app.js"></script>
+</body>
+</html>
